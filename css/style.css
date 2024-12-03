@@ -58,6 +58,30 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Header ***********/
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header li {
+    display: flex;
+}
+
+header img {
+    width: 80px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+header a:hover {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+    padding-top: 15px;
+}
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
