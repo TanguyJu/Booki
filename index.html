@@ -28,24 +28,35 @@
         </header>
         <main>
 
-            <div class="recherche-and-filtres">
-                <div>
+            <div class="search-and-filters">
+                <div class="title-subtitle">
                     <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
 
                 <div class="search">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <form method="get" action="">
-                        
+                    <form class="search-bar" method="get" action="">
+                        <label><i class="fa-solid fa-location-dot"></i></label>
+                        <input type="text" id="city" name="city" placeholder="Marseille, France">
+                        <button type="submit">Rechercher</button>      
                     </form>
+                </div>
+
+                <div class="filters">
+                    <h3>Filtres</h3>
+                    <li>
+                        <a href=""><ul><i class="fa-solid fa-money-bill-wave"></i>Économique</ul></a>
+                        <a href=""><ul><i class="fa-solid fa-person"></i>Familial</ul></a>
+                        <a href=""><ul><i class="fa-solid fa-heart"></i>Romantique</ul></a>
+                        <a href=""><ul><i class="fa-solid fa-fire"></i>Nos pépites</ul></a>
+                    </li>
                 </div>
             </div>
 
 
 
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section id="hebergements">
 
                 </section>
                 <section class="populaires">
