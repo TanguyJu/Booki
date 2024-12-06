@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0px;
 }
 
 .main-container {
@@ -63,6 +64,7 @@ a {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header li {
@@ -78,7 +80,7 @@ header img {
 header a:hover {
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
-    padding-top: 15px;
+    padding-top: 14px;
 }
 
 
