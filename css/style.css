@@ -143,32 +143,33 @@ header a:hover {
     align-items: center;
 }
 
-.filters li {
+.choices {
     display: flex;
     flex-wrap: wrap;
-    font-size: 16px;
-    font-weight: bold;
 }
 
-.filters ul:hover {
+.filters button {
+    border: solid 2px rgba(192, 189, 189, 0.5);
+    padding: 12px 17px 12px 17px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.filters button:hover {
     background-color: var(--filter-bg-color);
 }
 
 .filters h3 {
-    font-size: 18px;
+    font-size: 19px;
     margin-right: 10px;
     font-weight: bold;
 }
 
 .filters i {
     margin-right: 10px;
-}
-
-.filters ul {
-    border: solid 2px rgba(192, 189, 189, 0.5);
-    padding: 12px 17px 12px 17px;
-    margin: 10px;
-    border-radius: 25px;
 }
 
 .info {
