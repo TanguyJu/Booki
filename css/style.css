@@ -16,7 +16,8 @@
 body {
     display: flex;
     justify-content: center;
-    margin-top: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .main-container {
@@ -41,6 +42,27 @@ a {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.h-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.a-card {
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.a-card img {
+    object-fit: cover;
+}
+
+.h-card img {
+    object-fit: cover;
 }
 
 .card img {
@@ -203,13 +225,55 @@ header a:hover {
 }
 
 /****** Hebergements ***********/
-.hebergements {
-    width: 65%;
+#hebergements {
+    width: 66%;
+}
+
+#hebergements h2 {
+    padding-bottom: 33px;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 110px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.h-card {
+    height: 190px;
+}
+
+.hebergements-cards {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.h-card .card-title {
+    padding: 3px 0 0 5px;
+    margin: 0;
+}
+
+.h-card .card-subtitle {
+    padding: 10px 0 0 5px;
+    margin: 0;
+}
+
+.h-card .card-rating {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.more {
+    font-weight: bold;
+    font-size: 18px;
 }
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    width: 33%;
 }
 
 .populaires-title {
@@ -252,7 +316,74 @@ header a:hover {
     margin-bottom: 5px;
 }
 
+/****** Activities ***********/
 
+#activities {
+    margin-top: 70px;
+}
+
+#activities .section-title {
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.activities-cards {
+    display: flex;
+    gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.activities-cards .a-card {
+    width: 305px;
+}
+
+.a-card img {
+    height: 450px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.a-card .card-title {
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+
+/****** Footer ***********/
+
+footer {
+    background-color: var(--main-bg-color);
+    display: flex;
+    margin-top: 50px;
+}
+
+.footer-title {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 33%;
+    margin: 20px 0 20px 20px;
+}
+
+.footer-list li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-list ul {
+    font-size: 14px;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
