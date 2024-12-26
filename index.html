@@ -19,10 +19,10 @@
         <header>
             <img src="./images/logo/Booki.png" alt="Logo de Booki">
             <nav>
-                <li>
-                    <ul><a href="#hebergements">Hébergements</a></ul>
-                    <ul><a href="#activities">Activités</a></ul>
-                </li>
+                <ul>
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activities">Activités</a></li>
+                </ul>
             </nav>
             
         </header>
@@ -35,10 +35,13 @@
                 </div>
 
                 <div class="search">
-                    <form class="search-bar" method="get" action="">
+                    <form class="search-bar" method="get" action="#">
                         <label><i class="fa-solid fa-location-dot"></i></label>
                         <input type="text" id="city" name="city" placeholder="Marseille, France">
-                        <button type="submit">Rechercher</button>      
+                        <button type="submit">
+                            <span class="text">Rechercher</span>
+                            <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </button>      
                     </form>
                 </div>
 
@@ -257,25 +260,25 @@
         <footer>
             <div class="footer-list">
                 <h3 class="footer-title">À propos</h3>
-                <li>
-                    <ul><a href="#">Fonctionnement du site</a></ul>
-                    <ul><a href="#">Conditions générales</a></ul>
-                    <ul><a href="#">Données et confidentialité</a></ul>
-                </li>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
             </div>
             <div class="footer-list">
                 <h3 class="footer-title">Nos Hébergements</h3>
-                <li>
-                    <ul><a href="#">Charte qualité</a></ul>
-                    <ul><a href="#">Proposer votre hôtel</a></ul>
-                </li>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Proposer votre hôtel</a></li>
+                </ul>
             </div>
             <div class="footer-list">
                 <h3 class="footer-title">Assistance</h3>
-                <li>
-                    <ul><a href="#">Centre d'aide</a></ul>
-                    <ul><a href="#">Nous contacter</a></ul>
-                </li>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
             </div>
         </footer>
     </div>
